@@ -2,13 +2,13 @@
 
 
 def replace_in_list(my_list, idx, element):
-    if ux < 0 or idx >= len(my_list):
+    if idx < 0 or idx >= len(my_list):
         return my_list
     my_list[idx] = element
     return my_list
 
-my_list = [1, 2, 3, 4]
+my_list = [1, 2, 3, 4, 5]
 
-print(replace_in_list(my_list, 2, 10))
-print(replace_in_list(my_list, -1, 10))
-print(replace_in_list(my_list, 10, 10))
+print(replace_in_list(my_list, 2, 9))
+print(replace_in_list(my_list, -1, 9))
+print(replace_in_list(my_list, 10, 9))
