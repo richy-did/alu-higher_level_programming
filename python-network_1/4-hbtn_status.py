@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-Fetches the status from ALU intranet using requests
+Fetches status using requests
 """
 import requests
 if __name__ == "__main__":
-    url = "https://alu-intranet.hbtn.io/status"
-    response = requests.get(url)
+    response = requests.get("https://alu-intranet.hbtn.io/status")
     print("Body response:")
     print("\t- type: {}".format(type(response.text)))
     print("\t- content: {}".format(response.text))
